@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content [fullscreen]="true" id="content">
+  <div class="user">
+    <ion-avatar slot="start">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      <ion-label>Vinicius Ricardo</ion-label>
+    </ion-avatar>
+    <ion-icon name="notifications" slot="start"  size="large" color="light"></ion-icon>
+  </div>
+  <div class="month-stats">
+    <p id="price">R$ 0<span color="dark">.00</span></p>
+    <div class="options">
+      <ion-button (click)="startScan()"><ion-icon name="barcode" slot="start"></ion-icon>Ler</ion-button>
+      <ion-button color="dark"><ion-icon name="add-circle" slot="start"></ion-icon>Inserir</ion-button>
+    </div>
+  </div>
+  <div class="products">
+    <p>test</p>
   </div>
 </ion-content>
